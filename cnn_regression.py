@@ -2,6 +2,7 @@
 # python cnn_regression.py --dataset .\Houses-dataset\Houses_Dataset
 
 # import the necessary packages
+import keras
 from keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
 from image_search import datasets
@@ -9,6 +10,7 @@ from image_search import models
 import numpy as np
 import argparse
 import locale
+import os
 
 
 # construct the argument parser and parse the arguments
@@ -20,7 +22,8 @@ args = vars(ap.parse_args())
 # construct the path to the input .txt file that contains information
 # on each house in the dataset and then load the dataset
 print("loading house attributes...")
-inputPath =args["dataset"]+'\HousesInfo.txt'
+inputPath=os.path.join(args["dataset"], "HousesInfo.txt")
+#inputPath =args["dataset"]+'\HousesInfo.txt'
 df = datasets.load_house_attributes(inputPath)
 
 # load the house images and then scale the pixel intensities to the

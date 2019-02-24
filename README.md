@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## **Dataset**
 
 This is the dataset proposed and introduces in our paper: "House price estimation from visual and textual features"
@@ -37,3 +38,7 @@ H. Ahmed E. and Moustafa M. (2016). House Price Estimation from Visual and Textu
 
 7. Missing Attribute Values:  None.
 
+=======
+# keras-regression-cnns
+Predicting price of houses using a dataset that contains both visual and textual information
+>>>>>>> e78640d01a4b54a458497a4f0b386ef95c53504f
